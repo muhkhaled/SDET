@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="2"
+            tests="8">
+
+  <testsuite name="DressSearch"
+    errors="0" failures="2" hostname="" id="" package="DressSearch" skipped="0"
+    tests="8" time="38.66" timestamp="">
+  
+    <testcase name="Verify Search Results" classname="DressSearch" time="7.962" assertions="0">
+    </testcase>
+  
+    <testcase name="Checking (Printed Dress)" classname="DressSearch" time="0.06300" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Checking (Printed Summer Dress)" classname="DressSearch" time="0.06100" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Checking (Printed Chiffon Dress)" classname="DressSearch" time="0.05700" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Checking (Faded Short Sleeves T-shirt)" classname="DressSearch" time="5.542" assertions="1">  <failure message="Testing if element &lt;#product_list &gt; li:nth-child(6) &gt; div &gt; div.right-block &gt; h5 &gt; a.product-name&gt; contains text &#39;Dress&#39; in 5000ms - expected &#34;contains text &#39;Dress&#39;&#34; but got: &#34;does not contain &#39;Dress&#39;&#34; (5532ms)">    at Object.&lt;anonymous&gt; (C:\Users\Mohamed\UI Tests\test\DressSearch.js:19:40)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Checking (Blouse)" classname="DressSearch" time="5.540" assertions="1">  <failure message="Testing if element &lt;#product_list &gt; li:nth-child(7) &gt; div &gt; div.right-block &gt; h5 &gt; a.product-name&gt; contains text &#39;Dress&#39; in 5000ms - expected &#34;contains text &#39;Dress&#39;&#34; but got: &#34;does not contain &#39;Dress&#39;&#34; (5519ms)">    at Object.&lt;anonymous&gt; (C:\Users\Mohamed\UI Tests\test\DressSearch.js:19:40)</failure>
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Mohamed\UI Tests\test\ContactUsPage.js:7
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |         let contactUs = browser.page.ContactUsObjects();
+     6 |         contactUs.navigate()
+     7 |             .click(&#39;@subjectHeading&#39;) 
+     8 |             .click(&#39;@customerService&#39;)
+     9 |             .setValue(&#39;@emailAddress&#39;, &#39;test@gmail.com&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Mohamed\UI Tests\test\ContactUsPage.js:8
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+     6 |         contactUs.navigate()
+     7 |             .click(&#39;@subjectHeading&#39;)
+     8 |             .click(&#39;@customerService&#39;) 
+     9 |             .setValue(&#39;@emailAddress&#39;, &#39;test@gmail.com&#39;)
+     10 |             .setValue(&#39;@orderReference&#39;, &#39;12345&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Mohamed\UI Tests\test\ContactUsPage.js:9
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+     7 |             .click(&#39;@subjectHeading&#39;)
+     8 |             .click(&#39;@customerService&#39;)
+     9 |             .setValue(&#39;@emailAddress&#39;, &#39;test@gmail.com&#39;) 
+     10 |             .setValue(&#39;@orderReference&#39;, &#39;12345&#39;)
+     11 |             .setValue(&#39;@messageBox&#39;,&#39;message&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
