@@ -80,9 +80,12 @@ module.exports = {
       webdriver: {
         start_process: true,
         server_path: '',
-        cli_args: [
-          // --verbose
-        ]
+        port: undefined,
+        host: 'localhost',
+        ssl: false,
+        default_path_prefix: '',
+        proxy: undefined,
+        cli_args: {}
       }
     },
     
