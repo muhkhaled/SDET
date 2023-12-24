@@ -170,7 +170,7 @@ describe("Create User", () => {
 
 })
 
-describe("Authenticate User", () => {
+describe("(Expected Failure) Authenticate User", () => {
 
   test("with missing email", async () => {
     const response = await request(app)
@@ -178,9 +178,9 @@ describe("Authenticate User", () => {
     .send({password: "user1234"})
     token = response.body.token
     console.log(response.text)
-    expect(response.statusCode).toBe(200)
+    expect(response.statusCode).toBe(401)
     //401 'Incorrect email or password'
-    expect(response.body).toHaveProperty('token');
+    // expect(response.body).toHaveProperty('token');
   })
 
 test("with missing password", async () => {
@@ -189,9 +189,9 @@ test("with missing password", async () => {
   .send({email: "userr@gmail.com"})
   token = response.body.token
   console.log(response.text)
-  expect(response.statusCode).toBe(200)
+  expect(response.statusCode).toBe(401)
   //401 'Incorrect email or password'
-  expect(response.body).toHaveProperty('token');
+  // expect(response.body).toHaveProperty('token');
 })
 
 test("with invalid email format", async () => {
@@ -200,26 +200,26 @@ test("with invalid email format", async () => {
   .send({email: "user123"})
   token = response.body.token
   console.log(response.text)
-  expect(response.statusCode).toBe(200)
+  expect(response.statusCode).toBe(401)
   //401 'Incorrect email or password'
-  expect(response.body).toHaveProperty('token');
+  // expect(response.body).toHaveProperty('token');
 })
 })
 
 //INVALID AUTHORIZATION
-describe("Get User", () => {
+describe("(Expected Failure) Get User", () => {
 
   test("with invalid token", async () => {
     const response = await request(app)
     .get("/api/v1/users")
     .set("Authorization", '123456')
-    expect(response.statusCode).toBe(200)
+    expect(response.statusCode).toBe(403)
     console.log(response.text)
     //403 'Unauthorized'
   })
 })
 
-describe("Patch User", () => {
+describe("(Expected Failure) Patch User", () => {
 
     test("with invalid token", async () => {
       const response = await request(app)
@@ -227,34 +227,34 @@ describe("Patch User", () => {
       .set("Authorization", '123455')
       .send({name: "newName", email: "new_email@gmail.com", password: "newpassword123"})
       console.log(response.text)
-      expect(response.statusCode).toBe(200)
-      expect(response.body).toHaveProperty('message', 'User updated with success!');
+      expect(response.statusCode).toBe(403)
+      // expect(response.body).toHaveProperty('message', 'User updated with success!');
     })
   })
 
-describe("Delete User", () => {
+describe("(Expected Failure) Delete User", () => {
 
   test("with invalid token", async () => {
     const response = await request(app)
     .delete("/api/v1/users")
     .set('Authorization', '1234453346')
     console.log(response.text)
-    expect(response.statusCode).toBe(200)
+    expect(response.statusCode).toBe(403)
     //403 'Unauthorized to delete'
-    expect(response.body).toHaveProperty('message', 'User deleted with success!');
+    expect(response.body).toHaveProperty('message', 'Unauthorized to delete');
   })
 })
 
-describe("Delete All Users", () => {
+describe("(Expected Failure) Delete All Users", () => {
 
   test("with wrong admin key", async () => {
     const response = await request(app)
     .delete("/api/v1/all-users")
     .send({key_admin: "keyadmin"})
     console.log(response.text)
-    expect(response.statusCode).toBe(200)
+    expect(response.statusCode).toBe(403)
     //403 'Unauthorized access'
-    expect(response.body).toHaveProperty('message', 'Users deleted with success');
+    expect(response.body).toHaveProperty('message', 'Unauthorized access');
   })
 
   test("with valid admin key", async () => {
