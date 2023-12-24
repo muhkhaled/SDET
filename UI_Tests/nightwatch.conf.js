@@ -33,15 +33,12 @@ module.exports = {
   globals_path: '',
   
   webdriver: {
-    start_process:true,
-    server_path: '/usr/bin/chromedriver',
-    port: undefined,
-    host: 'localhost',
-    ssl: false,
-    default_path_prefix: '',
-    proxy: undefined,
-    cli_args: {}
-  
+    start_process : true,
+    server_path: "./bin/geckodriver-0.23",
+    cli_args: [
+      "--log", "debug"
+    ],
+    port: 4444
   },
 
   test_workers: {
@@ -60,7 +57,8 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'firefox',
+        acceptInsecureCerts: true
       },      
     },
     
