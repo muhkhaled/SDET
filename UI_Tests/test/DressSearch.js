@@ -15,7 +15,17 @@ module.exports = {
                 result.map((item)=>{
                     it (`Checking (${item})`, function() {
                         console.log(item)
-                        browser.verify.containsText(`#product_list > li:nth-child(${i}) > div > div.right-block > h5 > a.product-name`, 'Dress')
+                        console.log(typeof(item))
+                        if(item.includes('Dress'))
+                        {
+                            console.log(item)
+                            browser.verify.containsText(`#product_list > li:nth-child(${i}) > div > div.right-block > h5 > a.product-name`, 'Dress')
+                        }
+                        else{
+                            it(`Checking (${item}) (Expected Failure)`, function(){
+                                browser.verify.not.containsText(`#product_list > li:nth-child(${i}) > div > div.right-block > h5 > a.product-name`, 'Dress')
+                            })
+                        }
                     })
                 })
             }

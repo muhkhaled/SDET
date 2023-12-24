@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="2"
-            tests="8">
+            failures="0"
+            tests="10">
 
   <testsuite name="DressSearch"
-    errors="0" failures="2" hostname="" id="" package="DressSearch" skipped="0"
-    tests="8" time="43.30" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="DressSearch" skipped="0"
+    tests="10" time="47.48" timestamp="">
   
-    <testcase name="Verify Search Results" classname="DressSearch" time="11.05" assertions="0">
+    <testcase name="Verify Search Results" classname="DressSearch" time="23.03" assertions="0">
     </testcase>
   
-    <testcase name="Checking (Printed Dress)" classname="DressSearch" time="0.07600" assertions="1">
+    <testcase name="Checking (Printed Dress)" classname="DressSearch" time="0.09800" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Checking (Printed Summer Dress)" classname="DressSearch" time="0.07000" assertions="1">
+    <testcase name="Checking (Printed Summer Dress)" classname="DressSearch" time="0.08600" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Checking (Printed Chiffon Dress)" classname="DressSearch" time="0.08000" assertions="1">
+    <testcase name="Checking (Printed Chiffon Dress)" classname="DressSearch" time="0.1000" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Checking (Faded Short Sleeves T-shirt)" classname="DressSearch" time="5.178" assertions="1">  <failure message="Testing if element &lt;#product_list &gt; li:nth-child(6) &gt; div &gt; div.right-block &gt; h5 &gt; a.product-name&gt; contains text &#39;Dress&#39; in 5000ms - expected &#34;contains text &#39;Dress&#39;&#34; but got: &#34;does not contain &#39;Dress&#39;&#34; (5152ms)">    at Object.&lt;anonymous&gt; (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\DressSearch.js:18:40)</failure>
+    <testcase name="Checking (Faded Short Sleeves T-shirt)" classname="DressSearch" time="0.006000" assertions="0">
+    </testcase>
+  
+    <testcase name="Checking (Blouse)" classname="DressSearch" time="0.004000" assertions="0">
+    </testcase>
+  
+    <testcase name="Checking (Faded Short Sleeves T-shirt) (Expected Failure)" classname="DressSearch" time="0.09700" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Checking (Blouse)" classname="DressSearch" time="5.044" assertions="1">  <failure message="Testing if element &lt;#product_list &gt; li:nth-child(7) &gt; div &gt; div.right-block &gt; h5 &gt; a.product-name&gt; contains text &#39;Dress&#39; in 5000ms - expected &#34;contains text &#39;Dress&#39;&#34; but got: &#34;does not contain &#39;Dress&#39;&#34; (5024ms)">    at Object.&lt;anonymous&gt; (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\DressSearch.js:18:40)</failure>
+    <testcase name="Checking (Blouse) (Expected Failure)" classname="DressSearch" time="0.07900" assertions="1">
 
     
     </testcase>

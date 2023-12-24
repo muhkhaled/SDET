@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="8"
+            failures="0"
             tests="14">
 
   <testsuite name="ContactUsPage"
-    errors="0" failures="8" hostname="" id="" package="ContactUsPage" skipped="0"
-    tests="14" time="537.6" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="ContactUsPage" skipped="0"
+    tests="14" time="565.8" timestamp="">
   
-    <testcase name="Success Customer Service" classname="ContactUsPage" time="28.33" assertions="2">
+    <testcase name="Success Customer Service" classname="ContactUsPage" time="84.20" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Success Webmaster" classname="ContactUsPage" time="17.30" assertions="2">
+    <testcase name="Success Webmaster" classname="ContactUsPage" time="30.05" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="No Subject Heading" classname="ContactUsPage" time="21.88" assertions="2">
-
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5191ms)">    at No Subject Heading (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:49:21)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="No Email (Customer Service)" classname="ContactUsPage" time="24.83" assertions="2">
-
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5454ms)">    at No Email (Customer Service) (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:65:21)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="No Email (Webmaster)" classname="ContactUsPage" time="31.39" assertions="2">
-
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5492ms)">    at No Email (Webmaster) (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:81:21)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="Invalid Email" classname="ContactUsPage" time="26.45" assertions="2">
-
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5480ms)">    at Invalid Email (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:97:21)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="No Order Reference (Customer Service)" classname="ContactUsPage" time="21.42" assertions="2">
+    <testcase name="*Expected Failure* No Subject Heading" classname="ContactUsPage" time="18.27" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="No Order Reference (Webmaster)" classname="ContactUsPage" time="20.00" assertions="2">
+    <testcase name="*Expected Failure* No Email (Customer Service)" classname="ContactUsPage" time="20.39" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="No Message (Customer Service)" classname="ContactUsPage" time="26.14" assertions="2">
+    <testcase name="*Expected Failure* No Email (Webmaster)" classname="ContactUsPage" time="18.18" assertions="2">
 
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5478ms)">    at No Message (Customer Service) (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:145:21)</failure>
+    
 
     
     </testcase>
   
-    <testcase name="No Message (Webmaster)" classname="ContactUsPage" time="27.11" assertions="2">
+    <testcase name="*Expected Failure* Invalid Email" classname="ContactUsPage" time="20.01" assertions="2">
 
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5442ms)">    at No Message (Webmaster) (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:161:21)</failure>
+    
 
     
     </testcase>
   
-    <testcase name="Attach .JSON File (Customer Service)" classname="ContactUsPage" time="8.875" assertions="2">
+    <testcase name="No Order Reference (Customer Service)" classname="ContactUsPage" time="20.67" assertions="2">
 
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5477ms)">    at Attach .JSON File (Customer Service) (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:177:21)</failure>
+    
 
     
     </testcase>
   
-    <testcase name="Attach .JSON File (Webmaster)" classname="ContactUsPage" time="8.826" assertions="2">
+    <testcase name="No Order Reference (Webmaster)" classname="ContactUsPage" time="18.21" assertions="2">
 
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; contains text &#39;Your message has been successfully sent to our team&#39; in 5000ms - expected &#34;contains text &#39;Your message has been successfully sent to our team&#39;&#34; but got: &#34;does not contain &#39;Your message has been successfully sent to our team&#39;&#34; (5441ms)">    at Attach .JSON File (Webmaster) (C:\Users\Mohamed\New folder\SDET\UI_Tests\test\ContactUsPage.js:193:21)</failure>
+    
 
     
     </testcase>
   
-    <testcase name="No Attach File (Customer Service)" classname="ContactUsPage" time="3.163" assertions="1">
+    <testcase name="*Expected Failure* No Message (Customer Service)" classname="ContactUsPage" time="18.25" assertions="2">
+
+    
 
     
     </testcase>
   
-    <testcase name="No Attach File (Webmaster)" classname="ContactUsPage" time="3.073" assertions="1">
+    <testcase name="*Expected Failure* No Message (Webmaster)" classname="ContactUsPage" time="19.58" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="*Expected Failure* Attach .JSON File (Customer Service)" classname="ContactUsPage" time="3.444" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="*Expected Failure* Attach .JSON File (Webmaster)" classname="ContactUsPage" time="3.834" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="No Attach File (Customer Service)" classname="ContactUsPage" time="3.987" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="No Attach File (Webmaster)" classname="ContactUsPage" time="3.826" assertions="1">
 
     
     </testcase>

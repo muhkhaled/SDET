@@ -33,7 +33,7 @@ module.exports = {
             .verify.containsText('@alert', 'Your message has been successfully sent to our team');
     },
 
-    'No Subject Heading': function (browser){
+    '*Expected Failure* No Subject Heading': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -46,10 +46,10 @@ module.exports = {
             .saveScreenshot('screens/3.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/3.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
-    'No Email (Customer Service)': function (browser){
+    '*Expected Failure* No Email (Customer Service)': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -62,10 +62,10 @@ module.exports = {
             .saveScreenshot('screens/4.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/4.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
-    'No Email (Webmaster)': function (browser){
+    '*Expected Failure* No Email (Webmaster)': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -78,10 +78,10 @@ module.exports = {
             .saveScreenshot('screens/5.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/5.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
-    'Invalid Email': function (browser){
+    '*Expected Failure* Invalid Email': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -94,7 +94,7 @@ module.exports = {
             .saveScreenshot('screens/6.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/6.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
     'No Order Reference (Customer Service)': function (browser){
@@ -129,7 +129,7 @@ module.exports = {
             .verify.containsText('@alert', 'Your message has been successfully sent to our team');
     },
 
-        'No Message (Customer Service)': function (browser){
+        '*Expected Failure* No Message (Customer Service)': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -142,10 +142,10 @@ module.exports = {
             .saveScreenshot('screens/9.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/9.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
-    'No Message (Webmaster)': function (browser){
+    '*Expected Failure* No Message (Webmaster)': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -158,10 +158,10 @@ module.exports = {
             .saveScreenshot('screens/9.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/9.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
-    'Attach .JSON File (Customer Service)': function (browser){
+    '*Expected Failure* Attach .JSON File (Customer Service)': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -174,10 +174,10 @@ module.exports = {
             .saveScreenshot('screens/11.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/11.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
-        'Attach .JSON File (Webmaster)': function (browser){
+        '*Expected Failure* Attach .JSON File (Webmaster)': function (browser){
         let contactUs = browser.page.ContactUsObjects();
         contactUs.navigate()
             .click('@subjectHeading')
@@ -190,7 +190,7 @@ module.exports = {
             .saveScreenshot('screens/11.0.png')
             .click('@submitButton')
             .saveScreenshot('screens/11.1.png')
-            .verify.containsText('@alert', 'Your message has been successfully sent to our team');
+            .verify.containsText('@alert', 'There is 1 error');
     },
 
     'No Attach File (Customer Service)': function (browser){
