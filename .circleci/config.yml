@@ -12,7 +12,7 @@ jobs:
 
       - run:
           name: Updating System Dependencies
-          command: apt-get install default-jre && apt-get -f install && apt-get install chromium-browser
+          command: sudo apt-get install default-jre && sudo apt-get -f install && sudo apt-get install chromium-browser
 
       # Install Node.js dependencies for API
       - run:
