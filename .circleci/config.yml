@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:20.7
 
     working_directory: ~/repo
 
@@ -24,7 +24,7 @@ jobs:
       - run:
           name: Run API Tests
           command: npm run api:test
-          
+
       # Run Frontend tests
       - run:
           name: Run Frontend Tests
