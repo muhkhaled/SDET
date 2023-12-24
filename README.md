@@ -29,6 +29,11 @@ The first task didn't encounter any bugs, but a bug was discovered in the second
 
 This task involved testing all API routes within the Mock-User-Auth API. It required interactions with the routes using both valid and invalid request bodies, along with valid and invalid authorization tokens.
 
-## API Routes
+### API Routes
 
-![](https://monosnap.com/file/G8KJw3b0p52ygqZl2HstO8ZZh0tAlC)
+![image](https://github.com/muhkhaled/SDET/assets/81418890/4e4a2b80-876e-488c-9c9b-7ffef6f6ceb4)
+
+
+
+![These are the API Routes in Mock-User-Auth API](https://monosnap.com/file/G8KJw3b0p52ygqZl2HstO8ZZh0tAlC)
+
