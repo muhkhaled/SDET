@@ -20,7 +20,7 @@ This repository holds two folders: one for Ui Tests, which contains testing of [
 
 The first task was to test the functionality of the [Contact Us](http://automationpractice.multiformis.com/index.php?controller=contact) Page. This involved testing various combinations to determine the required and optional fields, checking if they led to valid or invalid submissions. The next task was to verify "dress" search results. 
 
-Nightwatch.js automatically generated an [HTML report](https://github.com/muhkhaled/SDET/tree/main/UI%20Tests/tests_output/nightwatch-html-report) to display the test results.
+Nightwatch.js automatically generated an HTML report to display the test results at `UI Tests/tests_output/nightwatch-html-report`.
 Here is the document for the [Test Cases](https://docs.google.com/spreadsheets/d/1bn_Hhxgq_vgSK62qykpqbs6n98_RYa8IehfYOsk_bWs/edit#gid=298129271).
 
 The first task didn't encounter any bugs, but a bug was discovered in the second task, leading to the creation of a [bug ticket](https://docs.google.com/document/d/19HlgJdrtWlCwSvekQf1lZL57HDv2M3Z8iEhGkUa4A_o/edit?usp=sharing) to address it.
@@ -36,4 +36,8 @@ This task involved testing all API routes within the Mock-User-Auth API. It requ
 An [HTML report]([API Test/test-report.html](https://github.com/muhkhaled/SDET/blob/main/API%20Test/test-report.html)) for the test results was created using Jest-HTML-Reporter.
 
 Issues were discovered within the CREATE USER route, leading to the creation of corresponding [bug tickets](https://docs.google.com/document/d/1c_9Oo3j7Ygoxr0_ijMb0Us7fj7UHrKomC7wT5eXYBXI/edit?usp=sharing).
+
+
+## CircleCI Status Badge
+
 
