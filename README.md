@@ -1,6 +1,5 @@
 # SDET Tasks
 
-## Getting Started
 This repository holds two folders: one for Ui Tests, which contains testing of [My Store](http://automationpractice.multiformis.com/index.php) using Nightwatch.js, and another for API Route Testing for [Mock-User-Auth](https://www.npmjs.com/package/mock-user-auth) using SuperTest and Jest.
 
 ## Required Technologies
