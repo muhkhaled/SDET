@@ -1,29 +1,33 @@
 version: 2.1
-orbs:
-  node: circleci/node@5.1.1
 
-workflows:
-  test:
-    jobs:
-      steps:
-        # install node and checkout code
-        - node/install:
-            node-version: '20.7'
-        - checkout
-        # Use root level package.json to install dependencies in the frontend app
-        - run:
-            name: Install Front-End Dependencies
-            command: |
-              npm run frontend:install
-        - run:
-            name: Install API Dependencies
-            command: |
-              npm run api:install
-        - run:
-            name: Run UI Tests
-            command: |
-              npm run frontend:test
-        - run:
-            name: Run API Tests
-            command: |
-              npm run api:test
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Install Node.js dependencies for API
+      - run:
+          name: Install API Dependencies
+          command: npm run api:install
+
+      # Install Node.js dependencies for Frontend
+      - run:
+          name: Install Frontend Dependencies
+          command: npm run frontend:install
+
+      # Run API tests
+      - run:
+          name: Run API Tests
+          command: npm run api:test
+
+      # Run Frontend tests
+      - run:
+          name: Run Frontend Tests
+          command: npm run frontend:test
+
+  
