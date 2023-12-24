@@ -33,12 +33,14 @@ module.exports = {
   globals_path: '',
   
   webdriver: {
-    start_process : true,
-    server_path: "./bin/geckodriver-0.23",
-    cli_args: [
-      "--log", "debug"
-    ],
-    port: 4444
+    start_process: true,
+    server_path: './bin/geckodriver-0.23',
+    port: undefined,
+    host: 'localhost',
+    ssl: false,
+    default_path_prefix: '',
+    proxy: undefined,
+    cli_args: [ '--log', 'debug' ]
   },
 
   test_workers: {
@@ -61,26 +63,6 @@ module.exports = {
         acceptInsecureCerts: true
       },      
     },
-    
-    chrome: {
-      desiredCapabilities: {
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-          //
-          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          w3c: true,
-          args: [
-            //'--no-sandbox',
-            //'--ignore-certificate-errors',
-            //'--allow-insecure-localhost',
-            //'--headless'
-          ]
-        }
-      },
-
-    }
-    
         
   },
   
