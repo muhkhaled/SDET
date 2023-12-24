@@ -10,6 +10,10 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: Updating System Dependencies
+          command: apt-get install default-jre && apt-get -f install && apt-get install chromium-browser
+
       # Install Node.js dependencies for API
       - run:
           name: Install API Dependencies
