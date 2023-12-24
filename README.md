@@ -46,5 +46,6 @@ Issues were discovered within the CREATE USER route, leading to the creation of 
 
 
 ## CircleCI Status Badge
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/TGoAQEE6MB7bNwxBtKrrXx/BLiKKV5muZ7UJ4nMYyihmD/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/TGoAQEE6MB7bNwxBtKrrXx/BLiKKV5muZ7UJ4nMYyihmD/tree/main)
 
 
