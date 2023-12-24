@@ -1,47 +1,30 @@
 version: 2.1
-orbs: 
-  - node: circleci/node@4.7 
-  - browser-tools: circleci/browser-tools@1.1.0
+orbs:
+  node: circleci/node@4.7
+  browser-tools: circleci/browser-tools@1.1.0
 
 jobs:
   build:
     docker:
       - image: cimg/node:lts-browsers
-
     working_directory: ~/repo
-
     steps:
       - checkout
       - browser-tools/install
-      - browser-tools 
+      - browser-tools
       - node/install-packages
-
       - run:
           name: Updating System Dependencies
-          command: npm install geckodriver --save-dev 
-
-      # Install Node.js dependencies for API
+          command: npm install geckodriver --save-dev
       - run:
           name: Install API Dependencies
           command: npm run api:install
-
-      # Install Node.js dependencies for Frontend
       - run:
           name: Install Frontend Dependencies
-          command: npm run frontend:install && npm install i chromedriver --save -dev
-
-      # Run API tests
+          command: npm run frontend:install && npm install chromedriver --save-dev
       - run:
           name: Run API Tests
           command: npm run api:test
-
-      # Run Frontend tests
       - run:
           name: Run Frontend Tests
           command: npm run frontend:test
-
-
-
-
-
-  
