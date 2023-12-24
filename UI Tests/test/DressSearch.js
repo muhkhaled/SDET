@@ -7,7 +7,6 @@ module.exports = {
             .setValue('@searchBar', 'dress')
             .click('@searchButton')
 
-            // console.log(search)
             browser.elements('css selector', '#product_list > li', function(result) {
 
             let ulLength = result.value.length
