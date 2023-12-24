@@ -7,12 +7,4 @@ module.exports = {
         // productListItems:'#product_list > li',
         // itemName:'#product_list > li:nth-child(1) > div > div.right-block > h5 > a.product-name',
       },
-
-    // commands: {
-    //     getProductList: function(){
-    //         return this.getText("#product_list > li", function(result){  
-    //         return result.value
-    //         })
-    //     }
-    // },
   };
