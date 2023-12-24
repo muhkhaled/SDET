@@ -33,7 +33,7 @@ This task involved testing all API routes within the Mock-User-Auth API. It requ
 
 ![image](https://github.com/muhkhaled/SDET/assets/81418890/4e4a2b80-876e-488c-9c9b-7ffef6f6ceb4)
 
+An [HTML report](API Test/test-report.html) for the test results was created using Jest-HTML-Reporter.
 
-
-![These are the API Routes in Mock-User-Auth API](https://monosnap.com/file/G8KJw3b0p52ygqZl2HstO8ZZh0tAlC)
+Issues were discovered within the CREATE USER route, leading to the creation of corresponding [bug tickets](https://docs.google.com/document/d/1c_9Oo3j7Ygoxr0_ijMb0Us7fj7UHrKomC7wT5eXYBXI/edit?usp=sharing).
 
