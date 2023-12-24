@@ -1,18 +1,21 @@
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@1.1.0
 jobs:
   build:
     docker:
-      - image: cimg/node:21.4.0-browsers
+      - image: cimg/node:18.19.0-browsers
 
     working_directory: ~/repo
 
     steps:
+      - browser-tools/install-browser-tools
       - checkout
 
       - run:
           name: Updating System Dependencies
-          command: npm install geckodriver --save-dev
+          command: npm install geckodriver --save-dev 
 
       # Install Node.js dependencies for API
       - run:
