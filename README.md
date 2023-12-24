@@ -5,6 +5,7 @@ This repository holds two folders: one for Ui Tests, which contains testing of [
 ## Required Technologies
 1. Required libraries for Ui Tests:
 - [Node.js](https://nodejs.org/en)
+- [Npm](https://docs.npmjs.com/cli/v6/commands/npm-install)
 - [Nightwatch.js](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html)
 
 2. Required libraries for Ui Tests:
