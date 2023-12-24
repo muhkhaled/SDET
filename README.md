@@ -25,10 +25,10 @@ Here is the document for the [Test Cases](https://docs.google.com/spreadsheets/d
 
 The first task didn't encounter any bugs, but a bug was discovered in the second task, leading to the creation of a [bug ticket](https://docs.google.com/document/d/19HlgJdrtWlCwSvekQf1lZL57HDv2M3Z8iEhGkUa4A_o/edit?usp=sharing) to address it.
 
-## 1. API Test
+## 2. API Test
 
 This task involved testing all API routes within the Mock-User-Auth API. It required interactions with the routes using both valid and invalid request bodies, along with valid and invalid authorization tokens.
 
-# API Routes
+## API Routes
 
-![]([https://myoctocat.com/assets/images/base-octocat.svg](https://monosnap.com/file/G8KJw3b0p52ygqZl2HstO8ZZh0tAlC)https://monosnap.com/file/G8KJw3b0p52ygqZl2HstO8ZZh0tAlC)
+![](https://monosnap.com/file/G8KJw3b0p52ygqZl2HstO8ZZh0tAlC)
