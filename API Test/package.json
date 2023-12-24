@@ -10,7 +10,7 @@
     "build": "scripts/build.sh",
     "start": "scripts/start.sh",
     "lint": "scripts/lint.sh",
-    "test": "scripts/test.sh",
+    "test": "npx jest api.test.js --RunInBand",
     "coverage": "nyc --reporter=lcov npm test"
   },
   "dependencies": {

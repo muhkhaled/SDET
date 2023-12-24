@@ -1,0 +1,9 @@
+{
+    "scripts": {
+    "frontend:install": "cd './UI Tests/' && npm install",
+    "frontend:test": "cd './UI Tests/' && npm run test",
+    "api:install": "cd './API Tests/' && npm install",
+    "api:test": "cd './API Tests/' && npm run test"
+}
+
+}
