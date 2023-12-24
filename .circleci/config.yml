@@ -22,7 +22,7 @@ jobs:
       # Install Node.js dependencies for Frontend
       - run:
           name: Install Frontend Dependencies
-          command: npm run frontend:install
+          command: npm run frontend:install && npm install i chromedriver --save -dev
 
       # Run API tests
       - run:

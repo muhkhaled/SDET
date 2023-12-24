@@ -51,13 +51,7 @@ module.exports = {
 
       desiredCapabilities: {
         browserName: 'chrome'
-      },
-      
-      webdriver: {
-        start_process: true,
-        server_path: ''
-      },
-      
+      },      
     },
     
     chrome: {
@@ -78,9 +72,9 @@ module.exports = {
       },
 
       webdriver: {
+        server_path: "node_modules/.bin/chromedriver",
+        port: 9515,
         start_process: true,
-        server_path: '',
-        port: undefined,
         host: 'localhost',
         ssl: false,
         default_path_prefix: '',
